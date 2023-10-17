@@ -1,0 +1,276 @@
+<!--Barrera Aguas Julio Arturo-4CV1-04/10/21-->
+
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" type="image/ico" href="favicon.ico"/>
+<head>
+    <title>Formulario de inscripción</title>
+    <style>
+        .FORM{
+            max-width: 60%;
+            margin: 0 auto;
+            border:1px solid black;
+            padding: 50px;
+            background-color: #FF8C00;
+        }
+        fieldset{
+            margin-bottom: 20px;
+            background-color: #FF8C00;
+        }
+        h1{
+            border:1px solid black;
+            margin: 0;
+            text-align: center;
+            color: #282828;
+            margin-bottom: 20px;
+        }
+        h2{
+            border:1px solid #282828;
+            margin: 0;
+            text-align: left;
+       
+        }
+        label{
+            background-color: #5e15ad28;
+            font-size: 16px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 5px;
+            padding: 1px;
+
+        }
+        .DATOSPERSONALES label{
+            border:1px solid black;
+            display: inline-table;
+            width: 15%;
+        }
+        .DATOSPERSONALES input{
+            border:1px solid black;
+            width: 60%;;
+        }
+        .DATOSPERSONALES{
+            border:1px solid black;
+            padding:5px;
+            margin-bottom: 20px;
+        }
+        
+        .CAPACITACION{
+            border:1px solid black;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            margin-bottom: 20px;
+        }
+        .PAGO{
+            border:1px solid black;
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+        .CURSO{
+
+            margin-top: 10px;
+            grid-column:1/3;
+        }
+        .CURSO label{
+            display: inline-block;
+            width: 60%;
+            border:1px solid black;
+        }
+        .DIAS{
+            margin-top: 10px;
+            grid-column: 3/7;
+        }
+        .check{
+            display: flex;
+            justify-content: space-around;
+        }
+        .DIAS label{
+            display: inline-block;
+            width: 98%;
+            border:1px solid black;
+        }
+        .CAMPOHORARIO{
+            display: inline-block;
+            width: 60%;
+            border:1px solid black;
+            grid-column:1/3;
+            margin-top: -40px;
+          
+        }
+         .DI label{
+            border:1px solid black;
+            display: inline-table;
+            width: 15%;
+        }
+        .DI input{
+            border:1px solid black;
+            width: 60%;;
+        }
+        .DI{
+            border:1px solid black;
+            padding:5px;
+            margin-bottom: 20px;
+        }
+        .button-formato {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            width: 150px;
+            padding: 10px;
+            background-color: #282828;
+            color: white;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        </style>
+</head>
+<body>
+    <div class="FORM">
+        <form>
+            
+                <h1>FORMULARIO DE INSCRIPCIÓN.</h1>
+            
+            <fieldset>
+                <h2>DATOS PERSONALES</h2>
+            </fieldset>
+            <div class="DATOSPERSONALES">
+
+                <div class="CAMPO">
+                    <label for="NOMBRE">Nombre</label>
+                    <input id="NOMBRE" type="text" placeholder="Haga clic aquí para escribir texto">
+                </div>
+
+                <div class="CAMPO">
+                    <label for="APELLIDO">Apellido</label>
+                    <input id="APELLIDO" type="text" placeholder="Haga clic aquí para escribir texto">
+                </div>
+
+                <div class="CAMPO">
+                    <label for="TELEFONO">Télefono</label>
+                    <input id="TELEFONO" type="number" placeholder="Haga clic aquí para escribir el número">
+                </div>
+
+                <div class="CAMPO">
+                    <label for="EMAIL">Correo Electrónico</label>
+                    <input id="EMAIL" type="email" placeholder="Haga clic aquí para escribir el correo">
+                </div>
+
+                <div class="CAMPO">
+                    <label for="DOC">Documento</label>
+                    <input id="DOC" type="text" placeholder="Haga clic aquí para escribir el texto">
+                </div>
+
+                <div class="CAMPO">
+                    <label for="date">Fecha de nacimiento</label>
+                    <input id="date" type="date">
+                </div>
+            </div>
+
+            <fieldset>
+                <h2>CAPACITACIÓN</h2>
+            </fieldset>
+            <div class="CAPACITACION">
+                <div class="CAMPO CURSO">
+                    <label for="CURSO">Curso</label>
+                    <select  id="CURSO">
+                        <option selected disabled>Elija un curso</option>
+                        <option>Curso 1</option>
+                        <option>Curso 2</option>
+                        <option>Curso 4</option>
+                        <option>Curso 5</option>
+                        <option>Curso 6</option>
+
+                    </select>
+                    </select>
+                </div>
+
+                <div class="CAMPO DIAS">
+                    <label>Días</label>
+                    <div class="check">
+                        <div class="campo-check">
+                            <input type="checkbox" id="day1">
+                             <label for="day1">Lunes</label>
+                        </div>
+                        <div class="campo-check">
+                            <input type="checkbox" id="day2">
+                             <label for="day2">Martes</label>
+                        </div>
+                        <div class="campo-check">
+                            <input type="checkbox" id="day3">
+                             <label for="day3">Miércoles</label>
+                        </div>
+                        <div class="campo-check">
+                            <input type="checkbox" id="day4">
+                             <label for="day4">Jueves</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="CAMPOHORARIO">
+                    <label for="HORARIO">Horario</label>
+                    <select  id="HORARIO">
+                        <option selected disabled>Elija un horario</option>
+                        <option>Horario 1</option>
+                        <option>Horario 2</option>
+                        <option>Horario 4</option>
+                        <option>Horario 5</option>
+                        <option>Horario 6</option>
+                    </select>
+                </div>
+                
+                
+            </div>
+
+            <fieldset>
+                <h2>PLAN DE PAGO</h2>
+            </fieldset>
+
+            <div class="PAGO">
+                <input type="radio" id="CONTADO" name="PAGO">
+                <label for="CONTADO">Contado</label>
+
+                <input type="radio" id="CREDITO" name="PAGO">
+                <label for="CREDITO">Crédito</label>
+
+                <input type="radio" id="MONEDA" name="PAGO">
+                <label for="MONEDA">Moneda</label>
+
+                <input type="RADIO" id="TARJETA" name="PAGO">
+                <label for="TARJETA">Tarjeta</label>
+            </div>
+
+            <fieldset>
+                <h2>DATOS DE LA INSTITUCIÓN</h2>
+            </fieldset>
+            <div class="DI">
+                <div class="CAMPO">
+                    <label for="NUMERO">No. de contrato</label>
+                    <input id="NUMERO" type="text" placeholder="Haga clic aquí para escribir texto">
+                </div>
+
+                <div class="CAMPO">
+                    <label for="PERSONA">Persona que atendió</label>
+                    <input id="PERSONA" type="text" placeholder="Haga clic aquí para escribir texto">
+                </div>
+
+                <div class="CAMPO">
+                    <label for="date-inscripcion">Fecha de inscripción</label>
+                    <input id="date-inscripcion" type="date">
+                </div>
+            </div>
+                
+            <div class="button-formato">
+                <button aligned="center";type="submit">Enviar.</button>
+              </div>
+        </form>
+    </div>
+</body>
+</html>
+
+<!--Realizado por Barrera Aguas Julio Arturo-->
